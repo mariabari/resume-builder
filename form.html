@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="text-white text-center">
+       <a href="index.html"> <h1><i class="fa-solid fa-id-card"></i> My Resume</h1></a>
+    </header>
+
+    <div class="container mt-4">
+        <form id="resume-form" class="card p-4 shadow-sm">
+            <h2 class="text-center mb-4">Resume Builder</h2>
+
+            <!-- Personal Information -->
+            <fieldset class="border p-3 mb-4">
+                <legend class="w-auto px-2">Personal Information</legend>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="name-input" class="form-label">Name:</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                            <input type="text" id="name-input" class="form-control" placeholder="John Doe" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email-input" class="form-label">Email:</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                            <input type="email" id="email-input" class="form-control" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="phone-input" class="form-label">Phone:</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
+                            <input type="tel" id="phone-input" class="form-control" placeholder="+1234567890" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="profile-pic-input" class="form-label">Profile Picture:</label>
+                        <input type="file" id="profile-pic-input" class="form-control" accept="image/*">
+                        <div id="profile-pic-preview" class="mt-2">
+                            <!-- Profile picture preview will be displayed here -->
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Education -->
+            <fieldset class="border p-3 mb-4">
+                <legend class="w-auto px-2">Education</legend>
+                <div class="mb-3">
+                    <label for="education-input" class="form-label">Education:</label>
+                    <input type="text" id="education-input" class="form-control" placeholder="Bachelor's Degree in Computer Science" required>
+                </div>
+            </fieldset>
+
+            <!-- Skills and Work Experience -->
+            <fieldset class="border p-3 mb-4">
+                <legend class="w-auto px-2">Skills and Experience</legend>
+                <div class="mb-3">
+                    <label for="skills-input" class="form-label">Skills:</label>
+                    <input type="text" id="skills-input" class="form-control" placeholder="HTML, CSS, JavaScript" required>
+                </div>
+                <div class="mb-3">
+                    <label for="work-input" class="form-label">Work Experience:</label>
+                    <textarea id="work-input" class="form-control" rows="3" placeholder="Job Title, Company, Duration, Responsibilities" required></textarea>
+                </div>
+            </fieldset>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Generate Resume</button>
+            </div>
+        </form>
+    </div>
+
+    <footer class="text-center">
+        <p>&copy; 2024 John Doe. All rights reserved.</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="form.js"></script>
+</body>
+
+</html>

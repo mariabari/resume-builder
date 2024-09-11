@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eaf6ff; /* Light blue background for the entire page */
+  color: #333; /* Darker text color for contrast */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #0056b3; /* Dark blue for header */
+  padding: 20px 0; /* Padding for header */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding slight shadow to header */
+}
+
+header h1 {
+  color: white !important;
+  font-size: 2.5rem; /* Adjust font size for balance */
+}
+
+.resume {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  border: 2px solid #b3d9ff; /* Light blue border */
+  padding: 30px; /* Increased padding for breathing room */
+  margin-bottom: 20px; /* Margin below the resume */
+}
+
+section {
+  margin-bottom: 25px; /* Increased margin for section separation */
+}
+
+section h2 {
+  font-size: 1.75rem; /* Consistent heading size */
+  border-bottom: 2px solid #007bff; /* Blue underline */
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+#profile-pic {
+  max-width: 60px; /* Slightly larger profile picture */
+  max-height: 60px;
+  object-fit: cover;
+  border-radius: 50%; /* Circular profile picture */
+  border: 2px solid #b3d9ff; /* Light blue border */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3 {
+  color: #0056b3; /* Dark blue for headings */
+  font-weight: bold; /* Bolder headings */
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px; /* Space below main header */
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+a {
+  color: #0056b3; /* Dark blue for links */
+  text-decoration: none; /* No underline */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+a:hover {
+  color: #003d7a; /* Darker blue on hover */
+}
+
+button, .btn {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0.5rem;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+button:hover, .btn:hover {
+  background-color: #003d7a; /* Darker blue on hover */
+}
+
+#toggle-skills {
+  background-color: #6c757d; /* Gray for toggle button */
+}
+
+footer {
+  background-color: #f1f1f1; /* Light background */
+  padding: 1.5rem 0; /* Increased padding */
+  color: #6c757d;
+  border-top: 1px solid #e0e0e0; /* Light border on top */
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn:hover {
+  opacity: 0.9; /* Hover effect */
+}
