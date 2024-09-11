@@ -67,10 +67,10 @@ downloadButton === null || downloadButton === void 0 ? void 0 : downloadButton.a
     doc.text(educationInfo, 10, 120);
     // Add skills section below education
     var skillsInfo = ((_c = document.getElementById("skills")) === null || _c === void 0 ? void 0 : _c.innerText) || "";
-    doc.text(skillsInfo, 10, 140);
+    doc.text(skillsInfo, 10, 160);
     // Add work experience section below skills
     var workExperience = ((_d = document.getElementById("work-experience")) === null || _d === void 0 ? void 0 : _d.innerText) || "";
-    doc.text(workExperience, 10, 160);
+    doc.text(workExperience, 10, 200);
     // Save the PDF
     doc.save("resume.pdf");
 });
